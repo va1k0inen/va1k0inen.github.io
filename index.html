@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Расписание ураааа</title>
+</head>
+
+<body>
+  <h1>Вау, расписание 8 "Б" класса, еще и в сайте?</h1>
+  <p>Расписание по времени:</p>
+  <p>1. 8:00 - 8:45</p>
+  <p>2. 8:50 - 9:35</p>
+  <p>3. 9:40 - 10:25</p>
+  <p>4. 10:30 - 11:15</p>
+  <p>5. 11:20 - 12:05</p>
+  <p>6. 12:10 - 12:55</p>
+  <p>7. 13:00 - 13:45</p>
+  <a href="monday.html">
+    <button>Расписание на понедельник</button>
+  </a>
+  <form>
+  <label for="pages">Выберите день недели:</label>
+  <select id="pages">
+    <option value="special.html">-</option>
+    <option value="index.html">Вернуться на родину</option>
+    <option value="monday.html">Понедельник</option>
+    <option value="tuesday.html">Вторник</option>
+    <option value="wednesday.html">Среда</option>
+    <option value="thursday.html">Четверг</option>
+    <option value="friday.html">Пятница</option>
+  </select>
+</form>
+
+<script>
+  document.getElementById("pages").addEventListener("change", function() {
+    window.location.href = this.value; // Перенаправление на выбранную страницу
+  });
+</script>
+</body>
+
+</html>

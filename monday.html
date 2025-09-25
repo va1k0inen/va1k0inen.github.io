@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Понедельник</title>
+</head>
+
+<body>
+  <h1>Понедельник - день бездельник</h1>
+  <p>1. 8:00 - 8:45: Алгебра</p>
+  <p>2. 8:50 - 9:35: Английский язык</p>
+  <p>3. 9:40 - 10:25: История Казахстана</p>
+  <p>4. 10:30 - 11:15: География</p>
+  <p>5. 11:20 - 12:05: Биология</p>
+  <p>6. 12:10 - 12:55: Физическая культура</p>
+  <p>7. 13:00 - 13:45: Воспитательный час</p>
+  <a href="tuesday.html">
+    <button>Расписание на вторник</button>
+  </a>
+    <form>
+  <label for="pages">Выберите день недели:</label>
+  <select id="pages">
+    <option value="special.html">-</option>
+    <option value="monday.html">Понедельник</option>
+    <option value="tuesday.html">Вторник</option>
+    <option value="wednesday.html">Среда</option>
+    <option value="thursday.html">Четверг</option>
+    <option value="friday.html">Пятница</option>
+  </select>
+</form>
+<script>
+  document.getElementById("pages").addEventListener("change", function() {
+    window.location.href = this.value; // Перенаправление на выбранную страницу
+  });
+</script>
+</body>
+
+</html>
